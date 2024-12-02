@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Encanto Tropical</title>
+    <link rel="stylesheet" href="../../css/perfil.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Encanto Tropical Logo">
+        </div>
+        <nav class="navbar">
+            <a href="../login/index.html" class="nav-link" id="login-text">Login</a>
+            <a href="../perfil/index.html" class="nav-link" id="profile-text">Perfil</a>
+            <select id="language-selector">
+                <option value="pt">🇧🇷 Português</option>
+                <option value="en">🇺🇸 English</option>
+            </select>
+        </nav>
+    </header>
+    <main class="main-content">
+        <aside class="sidebar">
+            <button class="sidebar-button" onclick="window.location.href='../home/index.html'">🏠</button>
+            <button class="sidebar-button" onclick="window.location.href='../carrinho/index.html'">🛒</button>
+        </aside>
+        <section class="profile">
+            <h2 id="profile-title">Meu Perfil</h2>
+            <form action="" method="POST">
+                <div class="profile-info">
+                    <label for="username" id="username-label">Nome de Usuário</label>
+                    <input type="text" id="username" name="username" value="guiherme.souza" disabled>
+                </div>
+                <div class="profile-info">
+                    <label for="full-name" id="full-name-label">Nome Completo</label>
+                    <input type="text" id="full-name" name="full-name" value="João Guilherme Carneiro de Souza" disabled>
+                </div>
+                <div class="profile-info">
+                    <label for="email" id="email-label">E-mail</label>
+                    <input type="email" id="email" name="email" value="guiherme.souza@gmail.com" disabled>
+                </div>
+                <div class="profile-info">
+                    <label for="phone" id="phone-label">Telefone</label>
+                    <input type="tel" id="phone" name="phone" value="+55 081 9 8765-4321" disabled>
+                </div>
+                <div class="profile-info">
+                    <label for="password" id="password-label">Senha</label>
+                    <input type="password" id="password" name="password" value="************" disabled>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p id="footer-text">&copy; 2024 Encanto Tropical | Todos os direitos reservados</p>
+    </footer>
+    <script src="../../js/language.js"></script>
+</body>
+</html>
