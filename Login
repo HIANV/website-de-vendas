@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Encanto Tropical</title>
+    <link href="../../css/login.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+          <img src="../../assets/images/logo.png" alt="Encanto Tropical Logo" class="logo">
+          <h2 id="login-title">Fazer login</h2>
+          <form id="login-form">
+            <div class="user-type">
+              <label>
+                <input type="radio" name="userType" value="user" checked>
+                <span id="normal-user">Usuário Normal</span>
+              </label>
+              <label>
+                <input type="radio" name="userType" value="admin">
+                <span id="admin-user">Administrador</span>
+              </label>
+            </div>
+            <div class="input-group">
+              <label for="username" id="username-label">Usuário:</label>
+              <input type="text" id="username" placeholder="Digite seu usuário">
+            </div>
+            <div class="input-group">
+              <label for="password" id="password-label">Senha:</label>
+              <input type="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <div class="input-group" id="admin-token-group" style="display: none;">
+              <label for="admin-token" id="admin-token-label">Token ADM:</label>
+              <input type="text" id="admin-token" placeholder="Digite o token">
+            </div>
+            <div class="remember-me">
+              <label>
+                <input type="checkbox" id="remember-me">
+                <span id="remember-me-text">Lembrar-me</span>
+              </label>
+            </div>
+            <button type="submit" id="login-button">Fazer login</button>
+          </form>
+          <a href="" class="forgot-password" id="forgot-password-link">Esqueci minha senha</a>
+        </div>
+    </div>
+    <select id="language-selector">
+        <option value="pt">🇧🇷 Português</option>
+        <option value="en">🇺🇸 English</option>
+    </select>
+    <script src="../../js/login.js"></script>
+</body>
+</html>
